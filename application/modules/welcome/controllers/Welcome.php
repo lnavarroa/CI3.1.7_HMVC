@@ -18,8 +18,21 @@ class Welcome extends MX_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function __construct()
+ 	{
+ 		parent::__construct();
+ 	}
+ 	
 	public function index()
 	{
 		$this->load->view('welcome_message');
 	}
+
+	//llamamos a otro modulo, la secuencia es modulo/controlador/método
+	public function call_to_module2()
+ 	{
+ 		$data['users'] =  Modules::run('login/index/data_users'); 
+ 		$this->load->view('home',$data);
+ 	}
 }
