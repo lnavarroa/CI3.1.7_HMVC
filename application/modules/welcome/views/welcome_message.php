@@ -91,7 +91,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<code>application/modules/</code>
 
 		<p>By clicking in the links below, you can navigate across the  modules</p>
-		<code><a href="">Public</a></code>
+		<code><a href="<?php base_url() ?>welcome/call_to_publicPages">Public</a></code>
+		<code><a href="<?php base_url() ?>welcome/call_to_module1">Module 1</a></code>
+		<code><a href="<?php base_url() ?>welcome/call_to_module2">Module 2</a></code>
+		<code><a href="<?php base_url() ?>welcome/call_to_module3">Module 3</a></code>
+		<code><a href="<?php base_url() ?>welcome/call_to_moduleN">Module N</a></code>
 
 	</div>
 

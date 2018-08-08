@@ -53,10 +53,10 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['public'] = 'public/PublicController';
+$route['publicPages'] = 'publicPages';
 $route['module1'] = 'module1';
 $route['module2'] = 'module2';
 $route['module3'] = 'module3';
-$route['moduleN'] = 'module4';
+$route['moduleN'] = 'moduleN';
 
 //$route['module_name'] = 'controller_name';
